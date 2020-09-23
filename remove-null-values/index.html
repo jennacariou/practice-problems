@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Remove Null Values</title>
+</head>
+<body>
+
+  <script>
+
+    function removeNullValues(array) {
+      var filteredArray = [];
+      for( var i = 0; i <array.length; i++) {
+        if(array[i] !== null){
+          filteredArray.push(array[i]);
+        }
+      }
+      return filteredArray
+
+    }
+
+    console.log(removeNullValues([3, 5, null, null, 87, "hello", "goodbye"]));
+    console.log('[true, null, false, {}, null, 43, "node"]', removeNullValues([true, null, false, {}, null, 43, "node"]));
+    console.log('[null, null, null, 7, null, "eight"]', removeNullValues([null, null, null, 7, null, "eight"]));
+
+  </script>
+</body>
+</html>
