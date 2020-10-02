@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>Zip Code Validator</title>
+</head>
+<body>
+  <script>
+    function zipCodeValidator(numbers) {
+      if(numbers.length === 5 && Number(numbers)) {
+        return true
+      } else {
+        return false
+      }
+      }
+
+
+
+    console.log('21594', zipCodeValidator("21594"));
+    console.log('3Eds32',zipCodeValidator("3Eds32"));
+    console.log('9123456', zipCodeValidator("9123465"));
+
+  </script>
+</body>
+</html>
