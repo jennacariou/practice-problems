@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>PayScale Analyzer</title>
+</head>
+<body>
+
+  <script>
+
+    function payScaleAnalyzer(payList) {
+    var minNum = Infinity
+    var maxNum = 0
+      for(var i =0; i<payList.length; i++){
+        maxNum = Math.max(maxNum, payList[i])
+        minNum = Math.min(minNum, payList[i])
+        }
+      return maxNum - minNum;
+    }
+
+
+    console.log('28, 34, 21, 39', payScaleAnalyzer([28, 34, 21, 39]))
+    console.log('18, 22, 19, 26', payScaleAnalyzer([18, 22, 19, 26]))
+    console.log('41.50, 27.25, 32.50, 29.60', payScaleAnalyzer([41.50, 27.25, 32.50, 29.60]))
+
+  </script>
+</body>
+</html>
